@@ -1,0 +1,17 @@
+// Bootsrap 5 Library
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+@import "global";
+@import "fonts";
+
+// Pages
+@import "pages/home";
+@import "pages/categories";
+@import "pages/login";
+// @import "pages/login";
+
+// Components
+@import "components/slider";
+@import "components/navbar";
+@import "components/footer";
+// @import "components/track-number";

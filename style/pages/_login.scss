@@ -1,0 +1,80 @@
+.login-section {
+  height: 90vh;
+
+  .login-wrapper {
+    height: 100%;
+  }
+
+  .bg-login {
+    background-color: #cae7f5;
+    height: 100%;
+
+    .img-login {
+      width: 80%;
+      align-self: center;
+      margin-top: 150px;
+    }
+  }
+
+  .card {
+    width: 80%;
+    border: none;
+    padding: 15px;
+    box-shadow: rgba(233, 233, 233, 0.2) 0px 5px 30px;
+
+    .card-text {
+      font-size: 14px;
+      color: #999999;
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
+
+    .forgot-password {
+      font-size: 13px;
+      color: $primary;
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .btn {
+      padding-inline: 18px;
+      font-size: 15px;
+    }
+
+    .form-floating label {
+      font-size: 13px;
+    }
+
+    .form-control {
+      font-size: 15px;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border: 0.2 #e1e1e1 solid;
+    }
+  }
+}
+
+// Mobile Device
+@media (max-width: 575.98px) {
+  .login-section {
+    height: max-content;
+    .login-wrapper {
+      height: 50%;
+    }
+
+    .bg-login {
+      .img-login {
+        width: 80%;
+        align-self: center;
+        margin-top: 70px;
+      }
+    }
+
+    .card {
+      width: 100%;
+      box-shadow: rgba(233, 233, 233, 0.2) 0px 5px 30px;
+    }
+  }
+}

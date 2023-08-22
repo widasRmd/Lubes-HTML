@@ -1,0 +1,64 @@
+.categories-section {
+  padding-block: 80px;
+
+  .form-select {
+    font-size: 14px;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    box-shadow: none;
+    border: 0.2px #e1e1e1 solid;
+  }
+
+  .form-control::placeholder {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 300;
+  }
+
+  .input-group-text {
+    background-color: transparent;
+  }
+
+  .card {
+    border: 0.1px #e1e1e1 solid;
+    border-radius: 10px;
+
+    .card-title {
+      color: #999999;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.07px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.hero-banner-categories {
+  padding-block: 120px;
+  background-color: #cae7f5;
+
+  .img-hero-categories {
+    width: 90%;
+  }
+
+  h2 {
+    font-weight: 600;
+    letter-spacing: 0.16px;
+    word-wrap: break-word;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 35px;
+    width: 80%;
+    text-align: justify;
+  }
+
+  .divider {
+    width: 200px;
+    border: 2.5px #a4d6ff solid;
+  }
+}

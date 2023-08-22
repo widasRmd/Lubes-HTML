@@ -1,0 +1,30 @@
+.overview {
+  padding-block: 120px;
+
+  .img-overview {
+    width: 90%;
+  }
+
+  h2 {
+    font-weight: 600;
+    letter-spacing: 0.16px;
+    word-wrap: break-word;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 35px;
+    width: 80%;
+    text-align: justify;
+  }
+
+  .divider {
+    width: 200px;
+    border: 2.5px #a4d6ff solid;
+  }
+}
+
+.category-section {
+  padding-block: 80px;
+}

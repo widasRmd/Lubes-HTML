@@ -12218,10 +12218,75 @@ body {
     box-shadow: rgba(233, 233, 233, 0.2) 0px 5px 30px;
   }
 }
-.img-banner {
+.swiper {
   width: 100%;
+  height: 700px;
+}
+.swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.swiper .swiper-slide .hero-title {
+  padding-inline: 15%;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.swiper .swiper-slide .hero-text {
+  padding-inline: 15%;
+  color: #575757;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 575.98px) {
+  .swiper {
+    height: 500px;
+  }
+  .swiper .swiper-slide .hero-title {
+    padding-inline: 10%;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  .swiper .swiper-slide .hero-text {
+    padding-inline: 10%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
 .navbar-top {
   padding-top: 12px;
   padding-bottom: 12px;

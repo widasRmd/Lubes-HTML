@@ -15,8 +15,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.png" />
 
-    <!-- SplideJS -->
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -81,19 +81,59 @@
     </section>
 
     <!-- Page Content -->
-    <section class="hero-banner page-content splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="/assets/img/Banner_01.jpg" class="img-banner" alt="">
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/img/Banner_02.jpg" class="img-banner" alt="">
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/img/Banner_03.jpg" class="img-banner" alt="">
-                </li>
-            </ul>
+    <section class="hero-banner page-content swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('/assets/img/Banner_01.jpg');">
+                <div class="row h-100">
+                    <div class="col-auto col-md-6 align-self-center">
+                        <h3 class="hero-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
+                            What is Lorem Ipsum?</h3>
+                        <p class="hero-text" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/assets/img/Banner_02.jpg');">
+                <div class="row h-100">
+                    <div class="col-auto col-md-6 align-self-center">
+                        <h3 class="hero-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
+                            What is Lorem Ipsum?</h3>
+                        <p class="hero-text" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/assets/img/Banner_03.jpg');">
+            </div>
+            <div class="swiper-slide" style="background-image: url('/assets/img/Banner_04.jpg');">
+            </div>
+            <div class="swiper-slide" style="background-image: url('/assets/img/Banner_05.jpg');">
+                <div class="row h-100">
+                    <div class="col-auto col-md-6 align-self-center">
+                        <h3 class="hero-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
+                            What is Lorem Ipsum?</h3>
+                        <p class="hero-text" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard
+                            dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
         </div>
     </section>
 
@@ -425,15 +465,37 @@
         AOS.init();
     </script>
 
-    <!-- SplideJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-        var splide = new Splide('.splide', {
-            type: 'fade',
-            autoplay: true,
-            rewind: true
+
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            loop: true,
+            cubeEffect: {
+                shadow: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 5 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
         });
-        splide.mount();
     </script>
 
 </body>

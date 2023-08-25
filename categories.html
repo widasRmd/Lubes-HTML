@@ -85,9 +85,9 @@
     <section class="hero-banner-categories page-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 align-self-center" data-aos="fade-right">
+                <div class="col-md-6 align-self-center hero-title" data-aos="fade-right">
                     <h2>Lubricants E-Library</h2>
-                    <hr class="divider">
+                    <div class="divider"></div>
                     <p>
                         Kami memiliki banyak informasi yang terkait dengan pelumas dan pelumasan yang dapat anda lihat
                         atau
@@ -96,7 +96,7 @@
                         lainnya.
                     </p>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
+                <div class="col-md-6 hero-image text-center" data-aos="fade-left">
                     <img class="img-hero-categories" src="/assets/img/hero-categories.png" alt="">
                 </div>
             </div>
@@ -107,65 +107,66 @@
     <div class="container categories-section">
         <div class="row">
             <!-- Left -->
-            <div class="col-md-3">
-                <div class="mb-5">
+            <div class="col-md-3 categories-filter">
+                <div class="sticky-md-top sticky-offset">
                     <a class="navbar-brand d-flex align-items-center" href="/">
                         <img src="/assets/icon/logo_pertamina_lubricants.png" class="me-3" alt="E-Lubricants"
                             height="30" />
                         <span>E-Lubricants</span>
                     </a>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="search-post">
-                        <i class='bx bx-search-alt'></i>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Search post & e-book"
-                        aria-label="Search post & e-book" aria-describedby="search-post">
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="card-title mb-3 text-body-secondary">
-                            <i class='bx bx-category me-2'></i>
-                            Categories
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="search-categories">
-                                <i class='bx bx-search-alt'></i>
-                            </span>
-                            <select class="form-select" id="search-categories">
-                                <option disabled selected>--Select Option--</option>
-                                <option value="0">All Category</option>
-                                <option value="1">Category 1</option>
-                                <option value="2">Category 2</option>
-                                <option value="3">Category 3</option>
-                                <option value="4">Category 4</option>
-                                <option value="5">Category 5</option>
-                            </select>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="search-post">
+                            <i class='bx bx-search-alt'></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search post & e-book"
+                            aria-label="Search post & e-book" aria-describedby="search-post">
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="card-title mb-3 text-body-secondary">
+                                <i class='bx bx-category me-2'></i>
+                                Categories
+                            </div>
+                            <div class="input-group mb-md-3">
+                                <span class="input-group-text" id="search-categories">
+                                    <i class='bx bx-objects-vertical-center'></i>
+                                </span>
+                                <select class="form-select" id="search-categories">
+                                    <option disabled selected>--Select Category--</option>
+                                    <option value="0">All Category</option>
+                                    <option value="1">Category 1</option>
+                                    <option value="2">Category 2</option>
+                                    <option value="3">Category 3</option>
+                                    <option value="4">Category 4</option>
+                                    <option value="5">Category 5</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3 text-body-secondary">
-                            <i class='bx bx-show-alt me-2'></i>
-                            Filter by
-                        </h5>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="recent">
-                                <i class='bx bx-show-alt'></i>
-                            </span>
-                            <select class="form-select" id="recent">
-                                <option disabled selected>--Select Option--</option>
-                                <option value="1">Recent Post</option>
-                                <option value="2">Most View</option>
-                            </select>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 text-body-secondary">
+                                <i class='bx bx-show-alt me-2'></i>
+                                Filter by
+                            </h5>
+                            <div class="input-group mb-md-3">
+                                <span class="input-group-text" id="recent">
+                                    <i class='bx bx-objects-vertical-center'></i>
+                                </span>
+                                <select class="form-select" id="recent">
+                                    <option disabled selected>--Select Option--</option>
+                                    <option value="1">Recent Post</option>
+                                    <option value="2">Most View</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Right -->
-            <div class="col-md-9">
+            <div class="col-md-9 categories-container">
                 <div class="row row-cols-2 row-cols-md-3 g-3 g-md-4">
                     <div class="col" data-aos="fade-up">
                         <div class="card-wrapper">
@@ -312,6 +313,49 @@
                         </div>
                     </div>
                 </div>
+                <hr class="divider">
+                <div class="row row-cols-2 row-cols-md-3 g-3 g-md-4">
+                    <div class="col" data-aos="fade-up">
+                        <div class="card-wrapper d-inline-flex align-items-center">
+                            <img src="/assets/icon/pdf-file.png" class="img-file" alt="">
+                            <div class="card-title-file">
+                                Bahan Presentasi - Lorem ipsum dolor sit amet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <div class="card-wrapper d-inline-flex align-items-center">
+                            <img src="/assets/icon/pdf-file.png" class="img-file" alt="">
+                            <div class="card-title-file">
+                                Bahan Presentasi
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <div class="card-wrapper d-inline-flex align-items-center">
+                            <img src="/assets/icon/pdf-file.png" class="img-file" alt="">
+                            <div class="card-title-file">
+                                Bahan Presentasi - Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <div class="card-wrapper d-inline-flex align-items-center">
+                            <img src="/assets/icon/pdf-file.png" class="img-file" alt="">
+                            <div class="card-title-file">
+                                Bahan Presentasi - Lorem
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <div class="card-wrapper d-inline-flex align-items-center">
+                            <img src="/assets/icon/pdf-file.png" class="img-file" alt="">
+                            <div class="card-title-file">
+                                Bahan Presentasis
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -332,8 +376,8 @@
                         </p>
                     </div>
                     <div class="col col-md-8">
-                        <div class="row">
-                            <div class="col-4 col-md-4">
+                        <div class="row justify-content-center">
+                            <div class="col-auto col-md-4">
                                 <h6>DIRECTION</h6>
                                 <ul>
                                     <li>
@@ -344,7 +388,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-4 col-md-4">
+                            <div class="col-auto col-md-4">
                                 <h6>E-LIBRARY</h6>
                                 <ul>
                                     <li>
@@ -358,7 +402,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col col-md-3">
+                            <div class="col-auto col-md-3">
                                 <h6 class="title-socmed-footer">Follow us</h6>
                                 <div class="socmed">
                                     <img src="/assets/icon/socmed (1).png" alt="" />

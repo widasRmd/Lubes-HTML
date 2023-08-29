@@ -12404,8 +12404,12 @@ body {
 }
 .swiper {
   width: 100%;
-  height: calc(100vh - 125px);
+  position: absolute;
   overflow: hidden;
+}
+.swiper .swiper-slide img {
+  display: block;
+  width: 100%;
 }
 .swiper .swiper-slide {
   background-position: center;
@@ -12429,11 +12433,6 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
-}
-.swiper .swiper-slide img.img-slide-1 {
-  width: 70%;
-  margin-top: 30px;
-  margin-left: 15px;
 }
 
 .autoplay-progress {
@@ -12467,9 +12466,6 @@ body {
 }
 
 @media (max-width: 575.98px) {
-  .swiper {
-    height: 300px;
-  }
   .swiper .swiper-slide .logo-bumn-hero {
     width: 40%;
   }

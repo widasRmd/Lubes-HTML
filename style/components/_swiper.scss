@@ -1,7 +1,12 @@
 .swiper {
   width: 100%;
-  height: calc(100vh - 125px);
+  position: absolute;
   overflow: hidden;
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
 
   .swiper-slide {
     background-position: center;
@@ -27,12 +32,6 @@
       font-size: 16px;
       font-weight: 300;
       line-height: 1.8;
-    }
-
-    img.img-slide-1 {
-      width: 70%;
-      margin-top: 30px;
-      margin-left: 15px;
     }
   }
 }
@@ -70,8 +69,6 @@
 // Mobile Device
 @media (max-width: 575.98px) {
   .swiper {
-    height: 300px;
-
     .swiper-slide {
       .logo-bumn-hero {
         width: 40%;

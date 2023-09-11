@@ -2,6 +2,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbar-toggler {
+  padding-inline: 7px;
+  padding-block: 5px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .page-content {
   margin-top: 118px;
 }
@@ -107,6 +116,28 @@ body {
   padding-inline: 18px;
 }
 
+.breadcrumb {
+  margin-bottom: 30px;
+  margin-left: 8px;
+
+  .breadcrumb-item {
+    color: #999999;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      color: #dc3545;
+    }
+  }
+}
+
+.btn-add {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 // Mobile Device
 @media (max-width: 575.98px) {
   .page-content {
@@ -171,5 +202,18 @@ body {
       margin-bottom: 5px;
       margin-left: 3px;
     }
+  }
+
+  .breadcrumb {
+    margin-bottom: 20px;
+
+    .breadcrumb-item {
+      font-size: 13px;
+    }
+  }
+
+  .btn-add {
+    margin-bottom: 15px;
+    margin-left: 5px;
   }
 }

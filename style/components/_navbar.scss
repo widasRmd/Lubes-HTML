@@ -2,6 +2,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   background: white;
+  z-index: 2;
 
   .navbar-brand {
     img {
@@ -14,12 +15,52 @@
   }
 
   .navbar-collapse {
+    position: relative;
+
+    .profile-dropdown {
+      position: absolute;
+      top: 50px;
+      right: 0;
+
+      .card {
+        border: none;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+
+        .profileDropdown-menu {
+          padding: 0;
+          list-style-type: none;
+          margin-bottom: 0;
+
+          .profileDropdown-item {
+            display: block;
+            padding-inline: 12px;
+            padding-block: 10px;
+
+            .bx {
+              font-size: 16px;
+              line-height: 1;
+              vertical-align: middle;
+            }
+
+            span {
+              font-size: 14px;
+            }
+          }
+
+          .profileDropdown-item:hover {
+            background-color: #f7f7f7;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
     form {
       position: relative;
     }
 
     img {
-      margin-right: 5px;
+      margin-inline: 5px;
     }
 
     .fa-search {
@@ -43,6 +84,14 @@
       }
     }
 
+    .auth-login {
+      margin-left: 25px;
+
+      span {
+        font-size: 13px;
+      }
+    }
+
     .form-control {
       background-color: #f5f5f5;
       border: none;
@@ -60,6 +109,7 @@
 .navbar-bottom {
   background: linear-gradient(298.94deg, #ed1b2f 31.77%, #006cb8 141.53%);
   padding-block: 8px;
+  z-index: 1;
 
   .navbar-collapse {
     .nav-item {
@@ -98,6 +148,45 @@
     }
 
     .navbar-collapse {
+      .profile-dropdown {
+        position: absolute;
+        top: 75px;
+        left: 140px;
+        right: auto;
+
+        .card {
+          border: none;
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+
+          .profileDropdown-menu {
+            padding: 0;
+            list-style-type: none;
+            margin-bottom: 0;
+
+            .profileDropdown-item {
+              display: block;
+              padding-inline: 12px;
+              padding-block: 10px;
+
+              .bx {
+                font-size: 16px;
+                line-height: 1;
+                vertical-align: middle;
+              }
+
+              span {
+                font-size: 14px;
+              }
+            }
+
+            .profileDropdown-item:hover {
+              background-color: #f7f7f7;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+
       a {
         text-decoration: none;
         font-size: 14px;

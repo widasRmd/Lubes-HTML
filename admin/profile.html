@@ -103,7 +103,7 @@
           </li>
           <!-- Sub-Sub-Categories -->
           <li class="menu-item ms-4">
-            <a href="/admin/sub-sub-category" class="menu-link">
+            <a href="/admin/sub-sub-category.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-right-arrow-circle"></i>
               <div>Sub-Sub-Category</div>
             </a>
@@ -176,7 +176,7 @@
                     <div class="dropdown-divider"></div>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/admin/profile.html">
+                    <a class="dropdown-item" href="#">
                       <i class="bx bx-user me-2"></i>
                       <span class="align-middle">My Profile</span>
                     </a>
@@ -213,184 +213,59 @@
               <div class="col-12">
                 <div class="d-sm-flex py-2 ms-2">
                   <h4 class="fw-bold mb-0">
-                    Dashboard
+                    <span class="text-muted fw-light">Dashboard / </span>
+                    My Profile
                   </h4>
                 </div>
               </div>
             </div>
 
-            <!-- Summary -->
-            <div class="row">
-              <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-auto">
-                        <div class="avatar flex-shrink-0">
-                          <img src="/assets/img/icons/unicons/book.png" alt="" class="rounded" />
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <span class="d-block mb-1">Total E-Books</span>
-                        <h3 class="card-title text-nowrap mb-2">2,456</h3>
-                      </div>
-                    </div>
+            <div class="card py-3 mb-4">
+              <div class="container" style="max-width: 800px;">
+                <div class="row">
+                  <div class="col-6 col-md-3 mb-3">
+                    <label for="picture">
+                      <img src="/assets/avatar/user-photo.png" class="img-fluid rounded cursor-pointer"
+                        alt="Photo Profile">
+                    </label>
+                    <input class="d-none" type="file" name="picture" id="picture"
+                      accept="image/png, image/jpeg, image/jpg" />
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-auto">
-                        <div class="avatar flex-shrink-0">
-                          <img src="/assets/img/icons/unicons/categories.png" alt="" class="rounded" />
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <span class="d-block mb-1">Total Categories</span>
-                        <h3 class="card-title text-nowrap mb-2">782</h3>
-                      </div>
-                    </div>
+                <div class="row g-md-2">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter User Name"
+                      value="Master Admin" />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="occupation" class="form-label">Jabatan</label>
+                    <input type="text" id="occupation" class="form-control" placeholder="Enter Jabatan"
+                      value="Supervisor" />
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-auto">
-                        <div class="avatar flex-shrink-0">
-                          <img src="/assets/img/icons/unicons/user.png" alt="" class="rounded" />
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <span class="d-block mb-1">Total Users</span>
-                        <h3 class="card-title text-nowrap mb-2">2,456</h3>
-                      </div>
-                    </div>
+                <div class="row g-md-2">
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter Email"
+                      value="wawan@gmail.com" disabled />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="roles" class="form-label">Role</label>
+                    <select class="form-select" id="roles" aria-label="Select Role" disabled>
+                      <option disabled>-- Select Role --</option>
+                      <option value="USER">User</option>
+                      <option selected value="ADMIN">Admin</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-end">
+                    <button type="button" class="btn btn-primary">Save</button>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="row">
-
-              <!-- User Approval -->
-              <div class="col-md-6 mb-4">
-                <div class="card">
-                  <div class="card-header d-flex align-items-center justify-content-between">
-                    <h5 class="card-title m-0 me-2">User Approval</h5>
-                  </div>
-                  <div class="card-body">
-                    <ul class="p-0 m-0">
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/avatar/user.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">wawan@mail.com</small>
-                            <h6 class="mb-0">Wawan Setiawan</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/avatar/user.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">darrel@gmail.com</small>
-                            <h6 class="mb-0">Darrel Khaizanu</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/avatar/user.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">flinzo_andreaz@mail.com</small>
-                            <h6 class="mb-0">Andreaz Flinzo</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- E-Book Approval -->
-              <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                  <div class="card-header d-flex align-items-center justify-content-between">
-                    <h5 class="card-title m-0 me-2">E-Book Approval</h5>
-                  </div>
-                  <div class="card-body">
-                    <ul class="p-0 m-0">
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Category</small>
-                            <h6 class="mb-1">Bahan Presentasi - Lorem ipsum dolor sit amet 458</h6>
-                            <small class="text-muted d-block">Author : Wahyu Hidayat</small>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Category >> Sub-Category >> Sub-Sub-Category</small>
-                            <h6 class="mb-1">Bahan Presentasi - Lorem ipsum dolor sit amet 88</h6>
-                            <small class="text-muted d-block">Author : Faris Hernandes</small>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Category >> Sub-Category</small>
-                            <h6 class="mb-1">Bahan Presentasi - Lorem ipsum dolor sit amet 504</h6>
-                            <small class="text-muted d-block">Author : Andreaz F.</small>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
           </div>
           <!-- / Content -->
 

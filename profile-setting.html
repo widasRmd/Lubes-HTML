@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Login | Pertamina E-Lubricants</title>
+    <title>My Profile | Pertamina E-Lubricants</title>
 
     <link href="style/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                     <span class="user-login">
-                        <a href="#">
+                        <a href="/login.html">
                             <img src="/assets/avatar/user.png" alt="user" height="25" />
                             <span>Login/Register</span>
                         </a>
@@ -79,57 +79,109 @@
     </section>
 
     <!-- Page Content -->
-    <section class="page-content login-section">
-        <div class="row login-wrapper">
-            <div class="col-md-7 bg-login text-center align-self-center">
-                <img src="/assets/img/auth_illustration_login.png" class="img-fluid img-login" alt="">
-            </div>
-            <div class="col-md-5 align-self-center">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Login</h5>
-                        <p class="card-text">
-                            Selamat datang kembali, masukkan kredensial Anda untuk melanjutkan.
-                        </p>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                            <label for="email">Email address</label>
+    <section class="page-content">
+
+        <!-- Categories -->
+        <div class="container profile-section">
+            <div class="row">
+                <!-- Left -->
+                <div class="col-md-4">
+                    <div class="sticky-md-top sticky-offset">
+                        <div class="profile-card">
+                            <div class="profile-image mb-3">
+                                <label for="picture">
+                                    <img src="/assets/avatar/user-photo.png" class="img-fluid rounded cursor-pointer"
+                                        alt="Photo Profile">
+                                </label>
+                                <input class="d-none" type="file" name="picture" id="picture"
+                                    accept="image/png, image/jpeg, image/jpg" />
+                            </div>
+                            <div class="profile-name">John Doe</div>
+                            <div class="profile-occupation">Supervisor</div>
+                            <div class="profile-email">john_doe@mail.com</div>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                            <label for="password">Password</label>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="col-md-8 profile-container">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+                                </ol>
+                            </nav>
                         </div>
-                        <div class="row justify-content-between mb-3">
-                            <div class="col-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="remember">
-                                    <label class="form-check-label remember" for="remember">
-                                        Ingat Saya
-                                    </label>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Masukan nama"
+                                    value="John Doe">
+                                <label for="name">Nama Lengkap</label>
                             </div>
-                            <div class="col-auto">
-                                <a href="forgot-password.html" class="forgot-password">
-                                    Lupa Password?
-                                </a>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="occupation" placeholder="Masukan jabatan"
+                                    value="Supervisor">
+                                <label for="occupation">Jabatan</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="masukan email"
+                                    value="john_doe@mail.com" disabled>
+                                <label for="email">Email address</label>
                             </div>
                         </div>
-                        <div class="row justify-content-end">
-                            <div class="col-auto">
-                                <a type="button" href="register.html" class="btn btn-sm">
-                                    Register
-                                </a>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary btn-add align-self-center px-4">
+                                <span class="tf-icons bx bx-save"></span>
+                                Simpan
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Change Password -->
+                    <div class="row mt-3">
+                        <div class="col py-3">
+                            <h6 class="text-bold">
+                                Ubah kata sandi
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="old-password"
+                                    placeholder="Masukan Password Lama">
+                                <label for="old-password">Kata sandi saat ini</label>
                             </div>
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-primary">
-                                    Login
-                                </button>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Masukan Password">
+                                <label for="password">Kata sandi baru</label>
                             </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password-confirmation"
+                                    placeholder="Masukan Password Konfirmasi">
+                                <label for="password-confirmation">Konfirmasi kata sandi baru</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary btn-add align-self-center px-4">
+                                <span class="tf-icons bx bx-save"></span>
+                                Simpan
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Footer -->

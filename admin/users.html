@@ -149,6 +149,124 @@
             <!-- /Search -->
 
             <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <!-- Notification -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown me-3">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="notification" style="position: relative;">
+                    <i class='bx bx-bell bx-sm mt-2 '></i>
+                    <span class="badge badge-sm rounded-pill bg-label-danger"
+                      style="position: absolute; right: -10px;">5</span>
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+
+                  <li class="title-notification ms-3 mt-3">
+                    <h6>User Approval</h6>
+                  </li>
+                  <li class="d-flex">
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar">
+                            <img src="/assets/avatar/user.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted">wawan@mail.com</small>
+                          <span class="fw-semibold d-block">Wawan Setiawan</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="user-progress d-flex align-items-center px-3">
+                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar">
+                            <img src="/assets/avatar/user.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted">darrel@gmail.com</small>
+                          <span class="fw-semibold d-block">Darrel Khaizanu</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="user-progress d-flex align-items-center px-3">
+                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar">
+                            <img src="/assets/avatar/user.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted">flinzo_andreaz@mail.com</small>
+                          <span class="fw-semibold d-block">Andreaz Flinzo</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="user-progress d-flex align-items-center px-3">
+                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+
+                  <li class="title-notification ms-3 mt-3">
+                    <h6>E-Book Approval</h6>
+                  </li>
+                  <li class="d-flex">
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar">
+                            <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted d-block mb-1">Category</small>
+                          <h6 class="mb-1 text-wrap">Bahan Presentasi - Lorem ipsum dolor sit amet 458</h6>
+                          <small class="text-muted d-block">Author : Wahyu Hidayat</small>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="user-progress d-flex align-items-center px-3">
+                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar">
+                            <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted d-block mb-1">Category</small>
+                          <h6 class="mb-1 text-wrap">Bahan Presentasi - Lorem ipsum dolor sit amet 458</h6>
+                          <small class="text-muted d-block">Author : Wahyu Hidayat</small>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="user-progress d-flex align-items-center px-3">
+                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- /Notofication -->
+
               <!-- User -->
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -676,47 +794,98 @@
 
         <!-- Modal Body -->
         <div class="modal-body">
-          <div class="row">
+          <div class="row mb-2">
+            <div class="col-auto">
+              <h6>Wawan Setiawan</h6>
+            </div>
+          </div>
+          <div class="row mb-3">
             <div class="col-md-6">
-              <div class="form-check form-switch mb-2">
+              <div class="form-check form-switch mb-3">
                 <input class="form-check-input" type="checkbox" id="categoryPermission1" />
                 <label class="form-check-label" for="categoryPermission1">Category 001</label>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="form-check form-switch mb-2">
+            <div class="col-md-6 ms-3 ms-md-0">
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission1" />
+                <label class="form-check-label" for="subCategoryPermission1">Sub-Category 001</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission2" />
+                <label class="form-check-label" for="subCategoryPermission2">Sub-Category 002</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="form-check form-switch mb-3">
                 <input class="form-check-input" type="checkbox" id="categoryPermission2" />
                 <label class="form-check-label" for="categoryPermission2">Category 002</label>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="form-check form-switch mb-2">
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="form-check form-switch mb-3">
                 <input class="form-check-input" type="checkbox" id="categoryPermission3" />
                 <label class="form-check-label" for="categoryPermission3">Category 003</label>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="form-check form-switch mb-2">
+            <div class="col-md-6 ms-3 ms-md-0">
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission3" />
+                <label class="form-check-label" for="subCategoryPermission3">Sub-Category 003</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission4" />
+                <label class="form-check-label" for="subCategoryPermission4">Sub-Category 004</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission5" />
+                <label class="form-check-label" for="subCategoryPermission5">Sub-Category 005</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission6" />
+                <label class="form-check-label" for="subCategoryPermission6">Sub-Category 006</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="form-check form-switch mb-3">
                 <input class="form-check-input" type="checkbox" id="categoryPermission4" />
                 <label class="form-check-label" for="categoryPermission4">Category 004</label>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="form-check form-switch mb-2">
+            <div class="col-md-6 ms-3 ms-md-0">
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission7" />
+                <label class="form-check-label" for="subCategoryPermission7">Sub-Category 007</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission8" />
+                <label class="form-check-label" for="subCategoryPermission8">Sub-Category 008</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="subCategoryPermission9" />
+                <label class="form-check-label" for="subCategoryPermission9">Sub-Category 009</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="form-check form-switch mb-3">
                 <input class="form-check-input" type="checkbox" id="categoryPermission5" />
                 <label class="form-check-label" for="categoryPermission5">Category 005</label>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="form-check form-switch mb-2">
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="form-check form-switch mb-3">
                 <input class="form-check-input" type="checkbox" id="categoryPermission6" />
                 <label class="form-check-label" for="categoryPermission6">Category 006</label>
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <div class="form-check form-switch mb-2">
-                <input class="form-check-input" type="checkbox" id="categoryPermission7" />
-                <label class="form-check-label" for="categoryPermission7">Category 007</label>
               </div>
             </div>
           </div>

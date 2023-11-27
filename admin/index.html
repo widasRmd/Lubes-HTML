@@ -7,7 +7,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Dashboard | Pertamina E-Lubricants</title>
+  <title>Dashboard | Lubes</title>
 
   <meta name="description" content="" />
 
@@ -35,9 +35,6 @@
 
   <!-- Helpers -->
   <script src="/assets/vendor/js/helpers.js"></script>
-
-  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="/assets/js/config.js"></script>
 </head>
 
@@ -45,8 +42,8 @@
   <!-- Layout wrapper -->
   <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
-      <!-- Menu -->
 
+      <!-- Menu -->
       <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
         <div class="app-brand demo">
           <a href="/" class="app-brand-link">
@@ -65,59 +62,57 @@
         <ul class="menu-inner py-1">
           <!-- Dashboard -->
           <li class="menu-item active">
-            <a href="/admin/index.html" class="menu-link">
+            <a href="#" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
               <div>Dashboard</div>
             </a>
           </li>
 
-          <!-- E-Book -->
+          <!-- Report -->
           <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">E-Book</span>
+            <span class="menu-header-text">Pengaduan</span>
           </li>
           <!-- E-Book List -->
           <li class="menu-item">
-            <a href="/admin/ebooks.html" class="menu-link">
+            <a href="/admin/report.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-book-content"></i>
-              <div>E-book List</div>
+              <div>Pengaduan</div>
             </a>
           </li>
 
-          <!-- Categories -->
+          <!-- Scan Barcode -->
           <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Categories</span>
+            <span class="menu-header-text">Scan Barcode</span>
           </li>
           <!-- Category -->
           <li class="menu-item">
-            <a href="/admin/categories.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-category"></i>
-              <div>Categories</div>
-            </a>
-          </li>
-          <!-- Sub-Categories -->
-          <li class="menu-item ms-2">
-            <a href="/admin/sub-category.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-right-arrow-circle"></i>
-              <div>Sub-Category</div>
-            </a>
-          </li>
-          <!-- Sub-Sub-Categories -->
-          <li class="menu-item ms-4">
-            <a href="/admin/sub-sub-category.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-right-arrow-circle"></i>
-              <div>Sub-Sub-Category</div>
+            <a href="/admin/scan.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-qr-scan"></i>
+              <div>Scan Barcode</div>
             </a>
           </li>
 
-          <!-- Users Account -->
+          <!-- Master Product -->
           <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Users Account</span>
+            <span class="menu-header-text">Master Produk</span>
+          </li>
+          <!-- Products -->
+          <li class="menu-item">
+            <a href="/admin/products.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-category"></i>
+              <div>Produk</div>
+            </a>
+          </li>
+
+          <!-- Users Management -->
+          <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">User Management</span>
           </li>
           <!-- Users -->
           <li class="menu-item">
             <a href="/admin/users.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-user"></i>
-              <div>Users</div>
+              <i class="menu-icon tf-icons bx bxs-user-account"></i>
+              <div>User</div>
             </a>
           </li>
         </ul>
@@ -138,16 +133,6 @@
           </div>
 
           <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-            <!-- Search -->
-            <div class="navbar-nav align-items-center">
-              <div class="nav-item d-flex align-items-center">
-                <i class="bx bx-search fs-4 lh-0"></i>
-                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..."
-                  aria-label="Search..." />
-              </div>
-            </div>
-            <!-- /Search -->
-
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
               <!-- Notification -->
@@ -162,61 +147,49 @@
                 <ul class="dropdown-menu dropdown-menu-end">
 
                   <li class="title-notification ms-3 mt-3">
-                    <h6>User Approval</h6>
+                    <h6>Scan Barcode Terbaru</h6>
                   </li>
                   <li class="d-flex">
                     <a class="dropdown-item" href="#">
                       <div class="d-flex">
-                        <div class="flex-shrink-0 me-3">
-                          <div class="avatar">
-                            <img src="/assets/avatar/user.png" alt class="w-px-40 h-auto rounded-circle" />
-                          </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted">Kode Batch</small>
+                          <span class="fw-semibold d-block">0123456789</span>
                         </div>
                         <div class="flex-grow-1">
-                          <small class="text-muted">wawan@mail.com</small>
-                          <span class="fw-semibold d-block">Wawan Setiawan</span>
+                          <small class="text-muted">Kode QR</small>
+                          <span class="fw-semibold d-block">X0Br6bWgB</span>
                         </div>
                       </div>
                     </a>
-                    <div class="user-progress d-flex align-items-center px-3">
-                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                    </div>
                   </li>
                   <li class="d-flex">
                     <a class="dropdown-item" href="#">
                       <div class="d-flex">
-                        <div class="flex-shrink-0 me-3">
-                          <div class="avatar">
-                            <img src="/assets/avatar/user.png" alt class="w-px-40 h-auto rounded-circle" />
-                          </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted">Kode Batch</small>
+                          <span class="fw-semibold d-block">0123456789</span>
                         </div>
                         <div class="flex-grow-1">
-                          <small class="text-muted">darrel@gmail.com</small>
-                          <span class="fw-semibold d-block">Darrel Khaizanu</span>
+                          <small class="text-muted">Kode QR</small>
+                          <span class="fw-semibold d-block">X0Br6bWgB</span>
                         </div>
                       </div>
                     </a>
-                    <div class="user-progress d-flex align-items-center px-3">
-                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                    </div>
                   </li>
                   <li class="d-flex">
                     <a class="dropdown-item" href="#">
                       <div class="d-flex">
-                        <div class="flex-shrink-0 me-3">
-                          <div class="avatar">
-                            <img src="/assets/avatar/user.png" alt class="w-px-40 h-auto rounded-circle" />
-                          </div>
+                        <div class="flex-grow-1">
+                          <small class="text-muted">Kode Batch</small>
+                          <span class="fw-semibold d-block">0123456789</span>
                         </div>
                         <div class="flex-grow-1">
-                          <small class="text-muted">flinzo_andreaz@mail.com</small>
-                          <span class="fw-semibold d-block">Andreaz Flinzo</span>
+                          <small class="text-muted">Kode QR</small>
+                          <span class="fw-semibold d-block">X0Br6bWgB</span>
                         </div>
                       </div>
                     </a>
-                    <div class="user-progress d-flex align-items-center px-3">
-                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                    </div>
                   </li>
 
                   <li>
@@ -224,45 +197,31 @@
                   </li>
 
                   <li class="title-notification ms-3 mt-3">
-                    <h6>E-Book Approval</h6>
+                    <h6>Pengaduan Terbaru</h6>
                   </li>
                   <li class="d-flex">
                     <a class="dropdown-item" href="#">
                       <div class="d-flex">
-                        <div class="flex-shrink-0 me-3">
-                          <div class="avatar">
-                            <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                          </div>
-                        </div>
                         <div class="flex-grow-1">
-                          <small class="text-muted d-block mb-1">Category</small>
-                          <h6 class="mb-1 text-wrap">Bahan Presentasi - Lorem ipsum dolor sit amet 458</h6>
-                          <small class="text-muted d-block">Author : Wahyu Hidayat</small>
+                          <small class="text-muted">Nama ProdukKode QR</small>
+                          <span class="fw-semibold d-block"
+                            style="max-width: 30ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">ENDURO
+                            MATIC 10W-30 API SL/JASO MB, 6X1 LTR</span>
                         </div>
                       </div>
                     </a>
-                    <div class="user-progress d-flex align-items-center px-3">
-                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                    </div>
                   </li>
                   <li class="d-flex">
                     <a class="dropdown-item" href="#">
                       <div class="d-flex">
-                        <div class="flex-shrink-0 me-3">
-                          <div class="avatar">
-                            <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                          </div>
-                        </div>
                         <div class="flex-grow-1">
-                          <small class="text-muted d-block mb-1">Category</small>
-                          <h6 class="mb-1 text-wrap">Bahan Presentasi - Lorem ipsum dolor sit amet 458</h6>
-                          <small class="text-muted d-block">Author : Wahyu Hidayat</small>
+                          <small class="text-muted">Nama ProdukKode QR</small>
+                          <span class="fw-semibold d-block"
+                            style="max-width: 30ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">ENDURO
+                            MATIC 10W-30 API SL/JASO MB, 6X1 LTR</span>
                         </div>
                       </div>
                     </a>
-                    <div class="user-progress d-flex align-items-center px-3">
-                      <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
-                    </div>
                   </li>
                 </ul>
               </li>
@@ -297,13 +256,13 @@
                   <li>
                     <a class="dropdown-item" href="/admin/profile.html">
                       <i class="bx bx-user me-2"></i>
-                      <span class="align-middle">My Profile</span>
+                      <span class="align-middle">Profil saya</span>
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="/admin/settings.html">
                       <i class="bx bx-cog me-2"></i>
-                      <span class="align-middle">Settings</span>
+                      <span class="align-middle">Pengaturan</span>
                     </a>
                   </li>
                   <li>
@@ -312,7 +271,7 @@
                   <li>
                     <a class="dropdown-item" href="/login.html">
                       <i class="bx bx-power-off me-2"></i>
-                      <span class="align-middle">Log Out</span>
+                      <span class="align-middle">Keluar</span>
                     </a>
                   </li>
                 </ul>
@@ -350,7 +309,7 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <span class="d-block mb-1">Total E-Books</span>
+                        <span class="d-block mb-1">Total Scan Barcode</span>
                         <h3 class="card-title text-nowrap mb-2">2,456</h3>
                       </div>
                     </div>
@@ -367,7 +326,7 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <span class="d-block mb-1">Total Categories</span>
+                        <span class="d-block mb-1">Total Pengaduan</span>
                         <h3 class="card-title text-nowrap mb-2">782</h3>
                       </div>
                     </div>
@@ -384,7 +343,7 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <span class="d-block mb-1">Total Users</span>
+                        <span class="d-block mb-1">Total Produk</span>
                         <h3 class="card-title text-nowrap mb-2">2,456</h3>
                       </div>
                     </div>
@@ -395,53 +354,56 @@
 
             <div class="row">
 
-              <!-- User Approval -->
+              <!-- Last Scan -->
               <div class="col-md-6 mb-4">
                 <div class="card">
                   <div class="card-header d-flex align-items-center justify-content-between">
-                    <h5 class="card-title m-0 me-2">User Approval</h5>
+                    <h5 class="card-title m-0 me-2">Scan Barcode Terbaru</h5>
                   </div>
                   <div class="card-body">
                     <ul class="p-0 m-0">
                       <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/avatar/user.png" alt="User" class="rounded" />
-                        </div>
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                           <div class="me-2">
-                            <small class="text-muted d-block mb-1">wawan@mail.com</small>
-                            <h6 class="mb-0">Wawan Setiawan</h6>
+                            <small class="text-muted d-block mb-1">Kode Batch</small>
+                            <h6 class="mb-0">0123456789</h6>
+                          </div>
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Kode QR</small>
+                            <h6 class="mb-0">X0Br6bWgB</h6>
                           </div>
                           <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-success rounded-pill px-3">Lihat</a>
                           </div>
                         </div>
                       </li>
                       <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/avatar/user.png" alt="User" class="rounded" />
-                        </div>
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                           <div class="me-2">
-                            <small class="text-muted d-block mb-1">darrel@gmail.com</small>
-                            <h6 class="mb-0">Darrel Khaizanu</h6>
+                            <small class="text-muted d-block mb-1">Kode Batch</small>
+                            <h6 class="mb-0">0123456789</h6>
+                          </div>
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Kode QR</small>
+                            <h6 class="mb-0">X0Br6bWgB</h6>
                           </div>
                           <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-success rounded-pill px-3">Lihat</a>
                           </div>
                         </div>
                       </li>
-                      <li class="d-flex">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/avatar/user.png" alt="User" class="rounded" />
-                        </div>
+                      <li class="d-flex mb-4 pb-1">
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                           <div class="me-2">
-                            <small class="text-muted d-block mb-1">flinzo_andreaz@mail.com</small>
-                            <h6 class="mb-0">Andreaz Flinzo</h6>
+                            <small class="text-muted d-block mb-1">Kode Batch</small>
+                            <h6 class="mb-0">0123456789</h6>
+                          </div>
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Kode QR</small>
+                            <h6 class="mb-0">X0Br6bWgB</h6>
                           </div>
                           <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-success rounded-pill px-3">Lihat</a>
                           </div>
                         </div>
                       </li>
@@ -450,56 +412,71 @@
                 </div>
               </div>
 
-              <!-- E-Book Approval -->
+              <!-- Last Report -->
               <div class="col-md-6 mb-4">
                 <div class="card h-100">
                   <div class="card-header d-flex align-items-center justify-content-between">
-                    <h5 class="card-title m-0 me-2">E-Book Approval</h5>
+                    <h5 class="card-title m-0 me-2">Pengaduan Terbaru</h5>
                   </div>
                   <div class="card-body">
                     <ul class="p-0 m-0">
                       <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                        </div>
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                           <div class="me-2">
-                            <small class="text-muted d-block mb-1">Category</small>
-                            <h6 class="mb-1">Bahan Presentasi - Lorem ipsum dolor sit amet 458</h6>
-                            <small class="text-muted d-block">Author : Wahyu Hidayat</small>
+                            <small class="text-muted d-block mb-1">Nama
+                              Produk</small>
+                            <h6 class="mb-0"
+                              style="max-width: 25ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                              ENDURO MATIC 10W-30 API SL/JASO MB, 6X1 LTR</h6>
+                          </div>
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Lokasi</small>
+                            <h6 class="mb-0"
+                              style="max-width: 20ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                              Kalimantan Barat</h6>
                           </div>
                           <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-success rounded-pill px-3">Lihat</a>
                           </div>
                         </div>
                       </li>
                       <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                        </div>
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                           <div class="me-2">
-                            <small class="text-muted d-block mb-1">Category >> Sub-Category >> Sub-Sub-Category</small>
-                            <h6 class="mb-1">Bahan Presentasi - Lorem ipsum dolor sit amet 88</h6>
-                            <small class="text-muted d-block">Author : Faris Hernandes</small>
+                            <small class="text-muted d-block mb-1">Nama
+                              Produk</small>
+                            <h6 class="mb-0"
+                              style="max-width: 25ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                              ENDURO MATIC 10W-30 API SL/JASO MB, 6X1 LTR</h6>
+                          </div>
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Lokasi</small>
+                            <h6 class="mb-0"
+                              style="max-width: 20ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                              Denpasar</h6>
                           </div>
                           <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-success rounded-pill px-3">Lihat</a>
                           </div>
                         </div>
                       </li>
-                      <li class="d-flex">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="/assets/icon/pdf-file.png" alt="e-book" class="rounded" />
-                        </div>
+                      <li class="d-flex mb-4 pb-1">
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                           <div class="me-2">
-                            <small class="text-muted d-block mb-1">Category >> Sub-Category</small>
-                            <h6 class="mb-1">Bahan Presentasi - Lorem ipsum dolor sit amet 504</h6>
-                            <small class="text-muted d-block">Author : Andreaz F.</small>
+                            <small class="text-muted d-block mb-1">Nama
+                              Produk</small>
+                            <h6 class="mb-0"
+                              style="max-width: 25ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                              ENDURO MATIC 10W-30 API SL/JASO MB, 6X1 LTR</h6>
+                          </div>
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Lokasi</small>
+                            <h6 class="mb-0"
+                              style="max-width: 20ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                              Jakarta Timur</h6>
                           </div>
                           <div class="user-progress d-flex align-items-center gap-1">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-success">Approve</a>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-success rounded-pill px-3">Lihat</a>
                           </div>
                         </div>
                       </li>

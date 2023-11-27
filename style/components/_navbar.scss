@@ -1,227 +1,45 @@
-.navbar-top {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background: white;
-  z-index: 2;
+.navbar {
+  position: relative;
+  padding-top: 20px;
 
   .navbar-brand {
-    img {
-      margin-right: 15px;
-    }
+    padding: 0;
 
-    span {
-      font-size: 14px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      max-width: 200px;
     }
   }
 
-  .navbar-collapse {
-    position: relative;
-
-    .profile-dropdown {
-      position: absolute;
-      top: 50px;
-      right: 0;
-
-      .card {
-        border: none;
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
-
-        .profileDropdown-menu {
-          padding: 0;
-          list-style-type: none;
-          margin-bottom: 0;
-
-          .profileDropdown-item {
-            display: block;
-            padding-inline: 12px;
-            padding-block: 10px;
-
-            .bx {
-              font-size: 16px;
-              line-height: 1;
-              vertical-align: middle;
-            }
-
-            span {
-              font-size: 14px;
-            }
-          }
-
-          .profileDropdown-item:hover {
-            background-color: #f7f7f7;
-            border-radius: 5px;
-          }
-        }
-      }
-    }
-
-    form {
-      position: relative;
-    }
-
-    img {
-      margin-inline: 5px;
-    }
-
-    .fa-search {
-      position: absolute;
-      top: 11px;
-      left: 12px;
-      color: #999999;
-    }
-
-    a {
-      text-decoration: none;
-      font-size: 14px;
-      color: #504f5e;
-    }
-
-    .user-login {
-      margin-right: 25px;
-
-      span {
-        font-size: 13px;
-      }
-    }
-
-    .auth-login {
-      margin-left: 25px;
-
-      span {
-        font-size: 13px;
-      }
-    }
-
-    .form-control {
-      background-color: #f5f5f5;
-      border: none;
-      font-size: 14px;
-      font-weight: 300;
-      font-style: italic;
-      color: #333;
-      padding-left: 35px;
-      padding-right: 10px;
-      padding-block: 10px;
-    }
+  img {
+    margin-right: 15px;
   }
-}
 
-.navbar-bottom {
-  background: linear-gradient(298.94deg, #ed1b2f 31.77%, #006cb8 141.53%);
-  padding-block: 8px;
-  z-index: 1;
+  .btn-report {
+    padding-inline: 40px;
+    padding-block: 12px;
+    font-size: 14px;
+    background-color: #ca1b2d;
+    color: white;
+    margin-right: 3%;
+  }
 
-  .navbar-collapse {
-    .nav-item {
-      padding-inline: 15px;
-      font-size: 15px;
-      font-weight: 300;
-    }
-
-    .nav-item:hover {
-      background: #00000033;
-      border-radius: 8px;
-      transition: 200ms;
-    }
-
-    .nav-link {
-      padding-block: 5px;
-      padding-inline: 20px;
-    }
+  .btn-report:hover {
+    background-color: #0055b8;
+    transition-duration: 500ms;
   }
 }
 
 // Mobile Device
 @media (max-width: 575.98px) {
-  .navbar-top {
-    padding-top: 13px;
-    padding-bottom: 13px;
+  .navbar {
+    padding-top: 12px;
 
-    .navbar-brand {
-      img {
-        margin-right: 10px;
-      }
-
-      span {
-        font-size: 12px;
-      }
-    }
-
-    .navbar-collapse {
-      .profile-dropdown {
-        position: absolute;
-        top: 75px;
-        left: 140px;
-        right: auto;
-
-        .card {
-          border: none;
-          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
-
-          .profileDropdown-menu {
-            padding: 0;
-            list-style-type: none;
-            margin-bottom: 0;
-
-            .profileDropdown-item {
-              display: block;
-              padding-inline: 12px;
-              padding-block: 10px;
-
-              .bx {
-                font-size: 16px;
-                line-height: 1;
-                vertical-align: middle;
-              }
-
-              span {
-                font-size: 14px;
-              }
-            }
-
-            .profileDropdown-item:hover {
-              background-color: #f7f7f7;
-              border-radius: 5px;
-            }
-          }
-        }
-      }
-
-      a {
-        text-decoration: none;
-        font-size: 14px;
-        color: #504f5e;
-      }
-
-      .user-login {
-        float: right;
-        margin-block: 15px;
-        margin-inline: 10px;
-      }
-
-      .form-control {
-        font-size: 13px;
-        margin-block: 12px;
-      }
-
-      .fa-search {
-        position: absolute;
-        top: 23px;
-        left: 12px;
-        color: #999999;
-      }
-    }
-  }
-
-  .navbar-bottom {
-    padding-block: 5px;
-
-    .navbar-collapse {
-      margin-block: 25px;
-      .nav-item {
-        font-size: 14px;
-        margin-block: 8px;
-      }
+    .btn-report {
+      margin-right: 15px;
     }
   }
 }

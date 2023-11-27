@@ -1,72 +1,56 @@
-.overview {
-  padding-block: 120px;
-
-  .overview-img {
-    .img-overview {
-      width: 90%;
-    }
-  }
-
-  .overview-text {
-    padding-inline: 5%;
-    h2 {
-      font-weight: 600;
-      letter-spacing: 0.16px;
-      word-wrap: break-word;
-    }
-
-    p {
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 35px;
-      text-align: justify;
-    }
-
-    .divider {
-      width: 200px;
-      border: 2.5px #a4d6ff solid;
-      border-radius: 50px;
-      margin-block: 15px;
-    }
+.hero-banner {
+  margin-bottom: 30px;
+  .title-hero {
+    font-size: 60px;
+    line-height: 1em;
   }
 }
 
-.category-section {
-  padding-block: 60px;
+.guide {
+  padding: 30px;
+
+  .badge-guide {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .card-guide {
+    padding-inline: 5%;
+    padding-block: 20px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+
+    .img-guide {
+      width: 200px;
+    }
+
+    .text-guide {
+      font-size: 20px;
+      line-height: 1.5em;
+      color: #4f4f4f;
+    }
+  }
 }
 
 // Mobile Device
 @media (max-width: 575.98px) {
-  .overview {
-    padding-block: 60px;
-
-    .overview-img {
-      .img-overview {
-        width: 70%;
-      }
-    }
-
-    .overview-text {
-      padding-inline: 10%;
-      margin-top: 25px;
-
-      h2 {
-        font-size: 22px;
-        font-weight: 600;
-        letter-spacing: 0.1px;
-      }
-
-      p {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 25px;
-        text-align: justify;
-        margin-bottom: 0;
-      }
+  .hero-banner {
+    .title-hero {
+      font-size: 40px;
     }
   }
 
-  .category-section {
-    padding-block: 30px;
+  .guide {
+    padding: 20px;
+
+    .card-guide {
+      padding-inline: 30px;
+
+      .text-guide {
+        font-size: 17px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
   }
 }

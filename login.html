@@ -8,71 +8,24 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Login | Lubes</title>
+    <title>Detail Produk | Lubes</title>
 
     <link href="style/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png" />
 </head>
 
 <body>
     <!-- HEADER -->
     <section class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-top" data-aos="fade-down">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="/">
-                    <img src="assets/icon/logo_pertamina_lubricants.png" alt="E-Lubricants" height="35" />
-                    <span href="#">E-Lubricants</span>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex" href="/">
+                    <img src="assets/img/logo-lubricants.png" alt="E-Lubricants" />
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-                    <span class="user-login">
-                        <a href="#">
-                            <img src="assets/avatar/user.png" alt="user" height="25" />
-                            <span>Login/Register</span>
-                        </a>
-                    </span>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <i class="fa fa-search"></i>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar navbar-dark navbar-expand-lg navbar-bottom" data-aos="fade-down">
-            <div class="container">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Tentang e-Lubricants</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                E-Library
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Category 1</a></li>
-                                <li><a class="dropdown-item" href="#">Category 2</a></li>
-                                <li><a class="dropdown-item" href="#">Category 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Panduan</a>
-                        </li>
-                    </ul>
-                </div>
+                <a href="/report.html" type="button" class="btn btn-report rounded-pill">
+                    Laporkan
+                </a>
             </div>
         </nav>
     </section>
@@ -107,18 +60,8 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <a href="forgot-password.html" class="forgot-password">
-                                    Lupa Password?
-                                </a>
-                            </div>
                         </div>
                         <div class="row justify-content-end">
-                            <div class="col-auto">
-                                <a type="button" href="register.html" class="btn btn-sm">
-                                    Register
-                                </a>
-                            </div>
                             <div class="col-auto">
                                 <button type="button" class="btn btn-primary">
                                     Login
@@ -134,54 +77,39 @@
     <!-- Footer -->
     <footer>
         <section class="footer-top">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row footer-top-row">
-                    <div class="col col-md-4">
-                        <a href="/">
-                            <img src="assets/icon/Pertamina Lubricants White.png" class="logo-footer" alt="" />
-                        </a>
-                        <h5>E-Lubricants</h5>
-                        <p>
-                            PT. PERTAMINA LUBRICANTS Graha Pertamina, Tower Pertamax, floor
-                            16th Jl. Merdeka Timur no. 10, Gambir Jakarta Pusat 10110
-                        </p>
+                    <div class="col-6 col-sm-4 col-md-2 text-center">
+                        <img class="logo-footer" src="assets/img/logo_fastron.png" alt="">
                     </div>
-                    <div class="col col-md-8">
-                        <div class="row">
-                            <div class="col-4 col-md-4">
-                                <h6>DIRECTION</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">Tentang E-Lubricants</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Panduan</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-4 col-md-4">
-                                <h6>E-LIBRARY</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">Sharing Troubleshoot</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sharing Knowledge</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Recommendation</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col col-md-3">
-                                <h6 class="title-socmed-footer">Follow us</h6>
-                                <div class="socmed">
-                                    <img src="assets/icon/socmed (1).png" alt="" />
-                                    <img src="assets/icon/socmed (2).png" alt="" />
-                                    <img src="assets/icon/socmed (3).png" alt="" />
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="col-6 col-sm-4 col-md-2 text-center">
+                        <img class="logo-footer" src="assets/img/logo_enduro.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2 text-center">
+                        <img class="logo-footer" src="assets/img/logo_meditran.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2 text-center">
+                        <img class="logo-footer" src="assets/img/logo_primaxp.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2 text-center">
+                        <img class="logo-footer" src="assets/img/logo_mesran.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-2 text-center">
+                        <img class="logo-footer" src="assets/img/logo_coolant.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="assets/pdf/Identifikasi_Botol_Pelumas_Pertamina.pdf" target="_blank" type="button"
+                            class="btn btn-download rounded-pill">
+                            <i class="fa fa-cloud-download"></i>
+                            Download Panduan
+                        </a>
                     </div>
                 </div>
             </div>
@@ -193,6 +121,8 @@
                         <p>
                             Copyright ©2023 Lubes | All rights reserved.
                         </p>
+                        <img class="logo-footer-left" src="assets/img/logo-mypertamina-01.svg" alt="">
+                        <img class="logo-footer-right" src="assets/img/logo-mypertamina-02.svg" alt="">
                     </div>
                 </div>
             </div>

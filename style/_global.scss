@@ -43,6 +43,32 @@ body {
   transition-duration: 500ms;
 }
 
+.banner-promo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  .close-banner {
+    width: 27px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 200ms;
+  }
+
+  .close-banner:hover {
+    scale: 120%;
+  }
+
+  .img-banner {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+}
+
 // Mobile Device
 @media (max-width: 575.98px) {
   .hero-banner {
@@ -75,5 +101,21 @@ body {
   .btn-danger:hover {
     background-color: #0055b8;
     transition-duration: 500ms;
+  }
+
+  .banner-promo {
+    bottom: 0;
+    right: 0;
+
+    .close-banner {
+      width: 25px;
+      position: absolute;
+      right: 50%;
+      top: -13px;
+    }
+
+    .img-banner {
+      border-radius: 0;
+    }
   }
 }

@@ -12024,6 +12024,29 @@ body {
   transition-duration: 500ms;
 }
 
+.banner-promo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.banner-promo .close-banner {
+  width: 27px;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  cursor: pointer;
+  transition: ease-out;
+  transition-duration: 200ms;
+}
+.banner-promo .close-banner:hover {
+  scale: 120%;
+}
+.banner-promo .img-banner {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
 @media (max-width: 575.98px) {
   .hero-banner {
     height: 450px;
@@ -12051,6 +12074,19 @@ body {
   .btn-danger:hover {
     background-color: #0055b8;
     transition-duration: 500ms;
+  }
+  .banner-promo {
+    bottom: 0;
+    right: 0;
+  }
+  .banner-promo .close-banner {
+    width: 25px;
+    position: absolute;
+    right: 50%;
+    top: -13px;
+  }
+  .banner-promo .img-banner {
+    border-radius: 0;
   }
 }
 .hero-banner {

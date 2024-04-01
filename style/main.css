@@ -12293,8 +12293,20 @@ body {
 }
 .product-detail .card-batch {
   text-align: center;
-  background-color: #ececec !important;
+  background-color: #fff6f6 !important;
   box-shadow: none !important;
+}
+.product-detail .card-batch .title-batch {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.product-detail .card-batch .text-batch {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.3em;
+  color: #ca1b2d;
+  font-style: italic;
 }
 .product-detail .card-detail {
   width: 90%;
@@ -12305,14 +12317,6 @@ body {
   background-color: #fff;
   box-shadow: 0 0 30px #f3f3f3;
   margin-bottom: 20px;
-}
-.product-detail .card-detail .title-batch {
-  font-size: 28px;
-  font-weight: 600;
-}
-.product-detail .card-detail .text-batch {
-  font-size: 36px;
-  font-weight: 400;
 }
 
 .overview {
@@ -12352,6 +12356,12 @@ body {
   .product-detail .title h3, .product-detail .title .h3 {
     font-size: 24px;
   }
+  .product-detail .card-batch .title-batch {
+    font-size: 22px;
+  }
+  .product-detail .card-batch .text-batch {
+    font-size: 16px;
+  }
   .product-detail .card-detail {
     width: 80%;
     padding-inline: 7%;
@@ -12359,18 +12369,12 @@ body {
     border-radius: 15px;
     margin-bottom: 10px;
   }
-  .product-detail .card-detail .title-batch {
-    font-size: 20px;
-    margin-bottom: 0;
-  }
-  .product-detail .card-detail .text-batch {
-    font-size: 28px;
-  }
   .overview {
     padding-block: 40px;
   }
   .overview .overview-img .img-overview {
-    width: 90%;
+    width: 75%;
+    margin-bottom: 25px;
   }
   .overview .overview-text {
     padding-inline: 10%;

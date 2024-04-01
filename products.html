@@ -43,11 +43,26 @@
             <div class="card-detail card-batch">
                 <div class="col">
                     <div class="title-batch">
-                        BATCH NUMBER
+                        Hi, Luna
                     </div>
                 </div>
                 <div class="col">
                     <div class="text-batch">
+                        terdapat indikasi duplikat produk
+                    </div>
+                </div>
+            </div>
+            <div class="card-detail d-md-flex">
+                <div class="col-md-3">
+                    <div class="title-detail">
+                        Batch Number
+                    </div>
+                </div>
+                <div class="col-md-1 d-none d-md-block">
+                    :
+                </div>
+                <div class="col-md-8">
+                    <div class="text-detail">
                         0123456789
                     </div>
                 </div>
@@ -63,22 +78,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="text-detail">
-                        X0Br6bWgB
-                    </div>
-                </div>
-            </div>
-            <div class="card-detail d-md-flex">
-                <div class="col-md-3">
-                    <div class="title-detail">
-                        Nama Produk
-                    </div>
-                </div>
-                <div class="col-md-1 d-none d-md-block">
-                    :
-                </div>
-                <div class="col-md-8">
-                    <div class="text-detail">
-                        ENDURO MATIC 10W-30 API SL/JASO MB, 6X1 LTR
+                        X6cdFaSfC
                     </div>
                 </div>
             </div>
@@ -262,6 +262,16 @@
             <img class="img-banner" src="/assets/img/promo_ketupat.jpg" alt="">
         </a>
     </div>
+
+    <!-- Promo Banner Script -->
+    <script>
+        const close_banner = document.querySelector('.close-banner');
+        const banner_promo = document.querySelector('#bannerPromo');
+
+        close_banner.addEventListener('click', () => {
+            banner_promo.style.display = 'none';
+        })
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.slim.min.js"></script>

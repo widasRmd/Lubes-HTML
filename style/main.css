@@ -12295,6 +12295,7 @@ body {
   text-align: center;
   background-color: #fff6f6 !important;
   box-shadow: none !important;
+  margin-bottom: 40px !important;
 }
 .product-detail .card-batch .title-batch {
   font-size: 28px;
@@ -12317,6 +12318,10 @@ body {
   background-color: #fff;
   box-shadow: 0 0 30px #f3f3f3;
   margin-bottom: 20px;
+}
+.product-detail .card-detail .title-detail {
+  font-weight: 300;
+  font-style: italic;
 }
 
 .overview {
@@ -12356,8 +12361,11 @@ body {
   .product-detail .title h3, .product-detail .title .h3 {
     font-size: 24px;
   }
+  .product-detail .card-batch {
+    margin-bottom: 20px !important;
+  }
   .product-detail .card-batch .title-batch {
-    font-size: 22px;
+    font-size: 20px;
   }
   .product-detail .card-batch .text-batch {
     font-size: 16px;
@@ -12368,6 +12376,10 @@ body {
     padding-block: 20px;
     border-radius: 15px;
     margin-bottom: 10px;
+  }
+  .product-detail .card-detail .title-detail {
+    margin-bottom: 4px;
+    font-size: 14px;
   }
   .overview {
     padding-block: 40px;

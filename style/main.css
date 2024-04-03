@@ -12291,23 +12291,38 @@ body {
   font-weight: 600;
   text-align: center;
 }
-.product-detail .card-batch {
+.product-detail .card-logined {
   text-align: center;
-  background-color: #fff6f6 !important;
+  background-color: #f5f9fc !important;
   box-shadow: none !important;
-  margin-bottom: 40px !important;
+  margin-bottom: 20px !important;
 }
-.product-detail .card-batch .title-batch {
-  font-size: 28px;
+.product-detail .card-logined .title-batch {
+  font-size: 24px;
   font-weight: 600;
-  margin-bottom: 15px;
 }
-.product-detail .card-batch .text-batch {
-  font-size: 22px;
+.product-detail .card-logined .text-batch {
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.3em;
   color: #ca1b2d;
   font-style: italic;
+  margin-top: 10px;
+}
+.product-detail .card-batch {
+  text-align: center;
+  background-color: #f5f5f5 !important;
+  box-shadow: none !important;
+  margin-bottom: 20px !important;
+}
+.product-detail .card-batch .title-batch {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.product-detail .card-batch .text-batch {
+  font-size: 28px;
+  line-height: 1.3em;
 }
 .product-detail .card-detail {
   width: 90%;
@@ -12361,14 +12376,24 @@ body {
   .product-detail .title h3, .product-detail .title .h3 {
     font-size: 24px;
   }
+  .product-detail .card-logined {
+    text-align: center;
+    margin-bottom: 10px !important;
+  }
+  .product-detail .card-logined .title-batch {
+    font-size: 18px;
+  }
+  .product-detail .card-logined .text-batch {
+    font-size: 16px;
+  }
   .product-detail .card-batch {
     margin-bottom: 20px !important;
   }
   .product-detail .card-batch .title-batch {
-    font-size: 20px;
+    font-size: 18px;
   }
   .product-detail .card-batch .text-batch {
-    font-size: 16px;
+    font-size: 24px;
   }
   .product-detail .card-detail {
     width: 80%;
